@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<title>Refactor Me</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	
+	<script type="text/javascript" src="src/do-not-refactor/LawnmowerRepository.js"></script>
+	<script type="text/javascript" src="src/do-not-refactor/PhoneCaseRepository.js"></script>
+	<script type="text/javascript" src="src/do-not-refactor/TShirtRepository.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"></head>
+    <script src="src/refactor-me/ProductDataConsolidator.js"></script> 
+<body>
+
+	<div ng-app="Products" ng-controller="ProductsCtrl" style="max-width: 600px" >
+		<nz-Products rate=1 currency="NZD"></nz-Products>
+        <nz-Products rate=0.76 currency="USD"></nz-Products>
+        <nz-Products rate=0.67 currency="Euro"></nz-Products>
+	</div>
+
+	
+</body>
+</html>
